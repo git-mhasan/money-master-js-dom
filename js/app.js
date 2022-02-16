@@ -10,7 +10,11 @@ function getInputValue(idName) {
     return inputValue;
 }
 
-
+// function for calculating total expenses.
+function totalExpense(foodExpense, rentExpense, clothExpense) {
+    const totalExpense = foodExpense + rentExpense + clothExpense;
+    return totalExpense;
+}
 
 document.getElementById("calculate-btn").addEventListener("click", function () {
     // console.log(incomeInput.value, foodCostInput.value, rentCostInput.value, clothCostInput.value);
