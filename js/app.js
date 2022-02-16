@@ -1,0 +1,18 @@
+const incomeInput = document.getElementById("income-input");
+const foodCostInput = document.getElementById("food-cost-input");
+const rentCostInput = document.getElementById("rent-cost-input");
+const clothCostInput = document.getElementById("cloth-cost-input");
+
+// function for getting the input field value in float point number.
+function getInputValue(idName) {
+    const inputFieldText = document.getElementById(idName).value;
+    const inputValue = parseFloat(inputFieldText);
+    return inputValue;
+}
+
+
+
+document.getElementById("calculate-btn").addEventListener("click", function () {
+    // console.log(incomeInput.value, foodCostInput.value, rentCostInput.value, clothCostInput.value);
+    console.log(getInputValue("income-input"));
+})
