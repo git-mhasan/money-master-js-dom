@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Wallet</title>
+    <!-- Linking external CSS file -->
     <link rel="stylesheet" href="./css/style.css">
+    <title>Digital Wallet</title>
 </head>
 
 <body>
@@ -14,49 +15,61 @@
         <h1>Digital Wallet</h1>
     </header>
     <main>
+        <!-- left image section -->
         <section>
             <img src="./images/digital-money.jpg" alt="">
         </section>
+
+        <!-- right input and calculation section -->
         <section>
+            <!-- imcome input field section -->
             <div>
                 <div>
                     <h3>Income</h3>
                 </div>
                 <div>
                     <span>Income:</span>
-                    <input type="number">
+                    <input id="income-input" type="number">
                 </div>
             </div>
+
+            <!-- Expense input field section -->
             <div>
                 <div>
                     <h3>Expenses</h3>
                 </div>
                 <div>
                     <span>Food:</span>
-                    <input type="number">
+                    <input id="food-cost-input" type="number">
                 </div>
                 <div>
                     <span>Rent:</span>
-                    <input type="number">
+                    <input id="rent-cost-input" type="number">
                 </div>
                 <div>
                     <span>Clothes:</span>
-                    <input type="number">
+                    <input id="cloth-cost-input" type="number">
                 </div>
             </div>
-            <button type="submit">Calculate</button>
+            <button id="calculate-btn">Calculate</button>
+
+            <!-- Balance Calculation section -->
             <div>
                 <h3>Total Expenses: <span>5000</span></h3>
             </div>
             <div>
                 <h3>Balance: <span>5000</span></h3>
             </div>
+
+            <!-- savings calculation section -->
             <div><span>Save:</span><input type="number" /><span>%</span>
                 <button>Save</button>
             </div>
             <div>
                 <h3>Saving Amount: <span>2000</span></h3>
             </div>
+
+            <!-- remaining balance section -->
             <div>
                 <h3>Remaining Balance: <span>5000</span></h3>
             </div>
@@ -64,6 +77,7 @@
 
     </main>
 
+    <!-- Linking external javascript file. -->
     <script src="./js/app.js"></script>
 </body>
 
