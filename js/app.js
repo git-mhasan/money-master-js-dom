@@ -16,7 +16,16 @@ function totalExpense(foodExpense, rentExpense, clothExpense) {
     return totalExpense;
 }
 
+//function for dispalying money amount
+function displayMoneyAmount(idName, amount) {
+    document.getElementById(idName).innerText = amount;
+}
+
 document.getElementById("calculate-btn").addEventListener("click", function () {
     // console.log(incomeInput.value, foodCostInput.value, rentCostInput.value, clothCostInput.value);
-    console.log(getInputValue("income-input"));
+    // console.log(getInputValue("income-input"));
+    displayMoneyAmount("total-expense", 3444);
+    displayMoneyAmount("balance", 3884);
+    displayMoneyAmount("saving-amount", 3444);
+    displayMoneyAmount("remaining-balance", 3444);
 })
