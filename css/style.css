@@ -11,6 +11,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     max-width: 800px;
+    font-weight: 600px;
 }
 /* button styles */
 button{
