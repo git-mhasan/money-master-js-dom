@@ -5,76 +5,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- Linking external CSS file -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Digital Wallet</title>
 </head>
 
-<body>
-    <header>
-        <h1>Digital Wallet</h1>
+<body class="container mx-auto">
+    <header class="m-5">
+        <h2 class="text-center">DIGITAL WALLET</h2>
     </header>
-    <main>
+    <main class="d-md-flex flex-lg-row">
+        <!-- d-lg-flex flex-col flex-md-col flex-lg-row -->
         <!-- left image section -->
-        <section>
-            <img src="./images/digital-money.jpg" alt="">
+        <section class="col-12 col-md-6 align-items-center justify-content-center shadow m-2 p-3">
+            <img class="img-fluid rounded my-3" src="./images/digital-money.jpg" alt="">
         </section>
 
         <!-- right input and calculation section -->
-        <section>
+        <section class="col-12 col-md-6 align-items-center justify-content-center shadow m-2 p-2 p-lg-5">
             <!-- imcome input field section -->
-            <div>
+            <div class="mx-4 px-2">
                 <div>
-                    <h3>Income</h3>
+                    <h5 class="text-center mt-4">Income</h5>
                 </div>
-                <div>
-                    <span>Income:</span>
-                    <input id="income-input" type="number">
+                <div class="row g-3 align-items-center">
+                    <div class="col-3">
+                        <span class="col-form-label">Income:</span>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control" id="income-input" type="number">
+                    </div>
                 </div>
             </div>
 
             <!-- Expense input field section -->
-            <div>
+            <div class="mx-4 px-2 mb-3">
                 <div>
-                    <h3>Expenses</h3>
+                    <h5 class="text-center mt-4">Expenses</h5>
                 </div>
-                <div>
-                    <span>Food:</span>
-                    <input id="food-cost-input" type="number">
+                <div class="row g-3 align-items-center mb-3">
+                    <div class="col-3">
+                        <span class="col-form-label">Food: </span>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control" id="food-cost-input" type="number">
+                    </div>
                 </div>
-                <div>
-                    <span>Rent:</span>
-                    <input id="rent-cost-input" type="number">
+                <div class="row g-3 align-items-center mb-3">
+                    <div class="col-3">
+                        <span class="col-form-label">Rent:</span>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control" id="rent-cost-input" type="number">
+                    </div>
                 </div>
-                <div>
-                    <span>Clothes:</span>
-                    <input id="cloth-cost-input" type="number">
+                <div class="row g-3 align-items-center ">
+                    <div class="col-3">
+                        <span class="col-form-label">Clothes:</span>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control" id="cloth-cost-input" type="number">
+                    </div>
                 </div>
             </div>
-            <button id="calculate-btn">Calculate</button>
+            <button class="btn btn-primary d-block m-auto" id="calculate-btn">Calculate</button>
 
             <!-- Balance Calculation section -->
             <div>
-                <h3>Total Expenses: <span id="total-expense">0</span></h3>
+                <h5 class="text-center mt-5">Total Expenses: <span id="total-expense">0</span></h5>
             </div>
             <div>
-                <h3>Balance: <span id="balance">0</span></h3>
+                <h5 class="text-center mt-3 mb-5">Balance: <span id="balance">0</span></h5>
             </div>
 
             <!-- savings calculation section -->
-            <div><span>Save: </span><input id="save-input" type="number" /><span> % </span>
-                <button id="save-btn">Save</button>
+            <div class="row g-3 align-items-center mx-3">
+                <div class="col-3 col-lg-2">
+                    <span>Save: </span>
+                </div>
+                <div class="col-8 col-lg-6">
+                    <input class="form-control" id="save-input" type="number" />
+                </div>
+                <div class="col-1">
+                    <span> % </span>
+                </div>
+                <button class="block col-3 col-lg-3 btn btn-primary mx-auto mt-4 mt-lg-3" id="save-btn">Save</button>
             </div>
             <div>
-                <h3>Saving Amount: <span id="saving-amount">0</span></h3>
+                <h5 class="text-center mt-3">Saving Amount: <span id="saving-amount">0</span></h5>
             </div>
 
             <!-- remaining balance section -->
             <div>
-                <h3>Remaining Balance: <span id="remaining-balance">0</span></h3>
+                <h5 class="text-center mt-3 mb-1">Remaining Balance: <span id="remaining-balance">0</span></h5>
             </div>
-        </section>
 
+        </section>
+        <footer>
+
+        </footer>
     </main>
 
     <!-- Linking external javascript file. -->
